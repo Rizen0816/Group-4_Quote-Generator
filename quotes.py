@@ -14,4 +14,5 @@ class Quote:
 
     def add_quote(self, new_quote):
         self.quotes.append(new_quote)
-        
+
+ 
