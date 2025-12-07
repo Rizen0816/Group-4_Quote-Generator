@@ -30,7 +30,7 @@ def borrow_book():
     books = get_books()
     borrowed_books = get_borrowed_books()
     
-    
+   
     if student_id not in students:
         print("✗ Student not found!")
         return
@@ -45,7 +45,7 @@ def borrow_book():
         print("✗ Book not available!")
         return
     
-    
+
     borrow_date = datetime.now()
     due_date = borrow_date + timedelta(days=14)
     borrow_id = f"{student_id}_{book_id}_{borrow_date.strftime('%Y%m%d%H%M%S')}"
